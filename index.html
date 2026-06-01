@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Performance Indicator</h2>
+            <nav>
+                <a href="#" class="active">Overview</a>
+                <a href="#">Revenue</a>
+                <a href="#">Performance</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Performance Overview</h1>
+                <div class="filter-controls">
+                    <button id="btn-all" class="filter-btn active">All Departments</button>
+                    <button id="btn-high" class="filter-btn">High Performing (> $50k)</button>
+                </div>
+            </header>
+
+            <!-- KPI Cards Grid -->
+            <section class="kpi-grid">
+                <div class="kpi-card">
+                    <h3>Total Revenue</h3>
+                    <p id="total-revenue">$0</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Top Department</h3>
+                    <p id="top-dept">-</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Active Projects</h3>
+                    <p id="active-projects">12</p>
+                </div>
+            </section>
+
+            <!-- Chart Section -->
+            <section class="chart-section">
+                <canvas id="analyticsChart"></canvas>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
