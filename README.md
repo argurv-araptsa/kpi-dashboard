@@ -12,7 +12,7 @@ This project operates entirely on client-side logic, demonstrating efficient sta
 * **Dynamic Chart Morphing:** Users can switch layout views in real time via the sidebar navigation (Overview -> Bar Chart, Revenue -> Pie Chart, Performance -> Line Chart).
 * **Advanced Array Filtering:** Programmatic data filtering mechanism to isolate high-performing departments on the fly.
 * **Flawless Responsiveness:** Engineered using CSS Grid (with `auto-fit` and `minmax` configurations) and specialized media queries, ensuring an optimal UI/UX across mobile devices, tablets, and wide desktop screens.
-* **Custom Branding & UX:** Fully optimized using component-level CSS variables, featuring custom vector branding and high-resolution layout configurations.
+* **Custom Branding & UX:** Fully optimized using component-level CSS variables and high-resolution layout configurations.
 * **Performance Focused:** Built using Vanilla JS, HTML5, and semantic CSS3, maintaining zero external dependencies aside from the visualization canvas layer.
 
 ---
